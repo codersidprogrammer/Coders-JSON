@@ -21,8 +21,8 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 DynamicJsonDocument doc(1536);
 
 //SSID
-const char *ssid = "Nyari tuhan jangan wifi";
-const char *password = "imissyou";
+const char *ssid = "GANTI_DENGAN_SSID";
+const char *password = "GANTI_DENGAN_PASS_SSID";
 
 //Server API JSON untuk weather
 const char *serverName = "https://ibnux.github.io/BMKG-importer/cuaca/5002333.json";

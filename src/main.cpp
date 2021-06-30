@@ -1,3 +1,12 @@
+
+/**
+* Dibuat oleh Coders Indonesia
+* Youtube: https://youtube.com/codersindonesia
+* 
+* Sebagai manusia yang baik, harap tidak menghapus keterangan ini
+* Karena ini bukti bahwa temen-temen menghargai setiap kerjaan orang lain
+* Menjadi pintar boleh, tapi jangan lupa berakhlak :)
+*/
 #include <Arduino.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
@@ -5,7 +14,11 @@
 
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
+
+//Ini semi wajib
 #include <WiFiClientSecure.h>
+
+//Ini Wajib
 #include <ArduinoJson.h>
 
 #define SCREEN_WIDTH 128    // OLED display width, in pixels
@@ -13,7 +26,7 @@
 #define OLED_RESET -1       
 #define SCREEN_ADDRESS 0x3C 
 
-//DISPLAY
+//DISPLAY OLED
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 //JSON Library untuk arduino
@@ -34,7 +47,7 @@ unsigned long lastTime = 0;
 unsigned long timerDelay = 10000;
 
 
-//Untuk menampilkan dan memposisikan  tulisan di OLED
+//Untuk menampilkan dan memposisikan tulisan di OLED sesuai koordinat
 void oledDisplay(int size, int x, int y, float value, String unit)
 {
   int charLen = 12;
@@ -72,6 +85,12 @@ void oledDisplay(int size, int x, int y, float value, String unit)
 //Untuk melakukan request ke API JSON
 String httpGETRequest(const char *serverName)
 {
+
+  /**
+   * Dibuat oleh Coders Indonesia
+   * Youtube: https://youtube.com/codersindonesia
+   * 
+   * */
   WiFiClientSecure httpsClient;
   HTTPClient http;
 

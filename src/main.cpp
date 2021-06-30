@@ -1,12 +1,12 @@
 
 /**
-* Dibuat oleh Coders Indonesia
-* Youtube: https://youtube.com/codersindonesia
-* 
-* Sebagai manusia yang baik, harap tidak menghapus keterangan ini
-* Karena ini bukti bahwa temen-temen menghargai setiap kerjaan orang lain
-* Menjadi pintar boleh, tapi jangan lupa berakhlak :)
-*/
+  * Dibuat oleh Coders Indonesia
+  * Youtube: https://youtube.com/codersindonesia
+  * 
+  * Sebagai manusia yang baik, harap tidak menghapus keterangan ini
+  * Karena ini bukti bahwa temen-temen menghargai setiap kerjaan orang lain
+  * Menjadi pintar boleh, tapi jangan lupa berakhlak :)
+  */
 #include <Arduino.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
